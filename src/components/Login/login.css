@@ -1,0 +1,35 @@
+.login-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container div.container {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    min-width: 400px;
+}
+
+.login-container div h2 {
+    font-family: sans-serif;
+    text-align: center;
+}
+/* Login/Sign Up FORM */
+
+/* Have an account / Don't have an account */
+
+.login-container p {
+    margin: 10px;
+    text-align: center;
+}
+.login-container span.button {
+    cursor: pointer;
+    color: rgb(40, 111, 179);
+}
+
+.login-container p.error {
+    color: red;
+}

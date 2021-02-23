@@ -1,0 +1,14 @@
+.dashboard-container {
+    display: flex;
+}
+
+.menu-container {
+    flex: .6;
+    min-width: 200px;
+}
+
+.canvas-container {
+    text-align: center;
+    flex: 3;
+
+}

@@ -1,0 +1,42 @@
+/* Single Project */
+
+.project {
+    display: flex;
+    margin: 5px;
+    padding-left: 3px;
+    cursor: pointer;
+    overflow: hidden;
+    height: 32px;
+    border-radius: 5px;
+    background: var(--main-bg-color);
+    align-items: center;
+    transition: font-size, box-shadow ease-in-out .15s;
+}
+.project:hover {
+    font-size: 18px;
+}
+
+.project:first-of-type {
+    margin-top: 25px;
+}
+
+.project h4 {
+    margin-left: 15px; 
+}
+
+.project.active {
+    font-size: 18px;
+    box-shadow: 0px 0px 1px black;
+}
+.rotate {
+    transform: rotate(180deg);
+}
+
+
+
+
+
+
+
+
+
