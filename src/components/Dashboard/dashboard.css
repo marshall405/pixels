@@ -10,5 +10,5 @@
 .canvas-container {
     text-align: center;
     flex: 3;
-
+    overflow: scroll;
 }
