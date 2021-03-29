@@ -2,12 +2,6 @@ import {useEffect, useState } from 'react'
 import {API_BASE_URL} from '../../constants/apiConstants'
 
 import './canvas.css'
-// import {io} from 'socket.io-client'
-
-
-// const socket = io(api, {
-//   transports: ['websocket']
-// })
 
 export default function Canvas({color, projectId, save, setSaved, setSaving}) {
   const [pixels, setPixels] = useState([])
@@ -18,11 +12,7 @@ export default function Canvas({color, projectId, save, setSaved, setSaving}) {
     setLoading(true)
     fetchPixels()
     setSaved(true)
-    // set websocket to update every pixel drawn by user
-    // socket.on('update', val => {
-      // May start to be a performance issue as more pixels are added!!!!!!
-    //   setValues([...pixels, val])
-    // })
+  
     // eslint-disable-next-line
   },[projectId])
 
@@ -55,8 +45,7 @@ export default function Canvas({color, projectId, save, setSaved, setSaving}) {
     draw(pixel)
     setNewPixels([...newPixels, pixel])
     setSaved(false)
-    // broadcast new pixel
-    // socket.emit('update', {x,y,color: color})
+
   }
 
   function savePixels() {
@@ -76,14 +65,7 @@ export default function Canvas({color, projectId, save, setSaved, setSaving}) {
       setSaved(true)
       setSaving(false)
     })
-    // let index = pixelExists(pixel)
 
-    // if(index === -1) {
-    //   // adds new value if one doesnt exist yet
-    //   newValues.push({x : pixel.x, y: pixel.y, color : pixel.color})
-    // } else {
-    //   newValues[index].color = color
-    // }
   }
 
   function pixelExists(pixel) {
