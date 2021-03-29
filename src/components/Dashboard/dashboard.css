@@ -11,4 +11,5 @@
     text-align: center;
     flex: 3;
     overflow: scroll;
+    padding: .1rem .5rem;
 }
